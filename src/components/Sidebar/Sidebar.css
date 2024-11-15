@@ -1,0 +1,39 @@
+.sidebar {
+  width: 300px;
+  padding: 1px;
+  margin-bottom: 20px;
+  margin-top: 3px;
+}
+
+.sidebar h3 {
+  font-size: 23px;
+}
+
+.sidebar ul {
+  padding: 0px;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.sidebar li {
+  display: block;
+  white-space: nowrap;
+  margin-bottom: 10px;
+
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.searchbar input {
+  width: 100%;
+  margin-bottom: 20px;
+  background: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  padding: 4px 2px 4px 2px;
+}

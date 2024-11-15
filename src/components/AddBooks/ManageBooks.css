@@ -1,0 +1,270 @@
+/* Layout Grid Container */
+.layout {
+  display: grid;
+  grid-template-areas:
+    "top-bar top-bar"
+    "sidebar content";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 90px 1fr;
+  height: 100vh;
+}
+
+.middle-area {
+  width: 50%;
+  grid-area: content;
+  padding: 5px 30px;
+  overflow-y: auto;
+}
+
+/* Top Navigation Bar */
+.top-bar {
+  grid-area: top-bar;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+
+/* Sidebar */
+.sidebar {
+  grid-area: sidebar;
+  background-color: white;
+  padding: 15px;
+  margin-top: 5px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.content-layout {
+  margin-top: 10px;
+  background-color: #c6a5a5;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.bookInfo-form {
+  padding: 5px 10px;
+}
+
+.bookInfo-form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+  color: #666;
+}
+
+
+
+.bookInfo-form input[type="text"],
+.bookInfo-form textarea {
+  width: 100%;
+  font-size: 1em;
+  color: #333;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  padding: 10px;
+}
+
+.bookInfo-form input[readonly],
+.bookInfo-form textarea[readonly] {
+  color: #555;
+}
+
+.dropdown-form {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.dropdown-form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+  color: #666;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 15px 0 0;
+}
+
+.styled-dropdown {
+  color: gray;
+}
+
+.styled-dropdown option {
+  color: black;
+}
+
+.styled-dropdown:focus,
+.styled-dropdown:valid {
+  color: black;
+}
+
+.submitcancel {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 30px 20px 15px 20px;
+}
+
+.submitcancel button {
+  width: 150px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitcancel button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.submitcancel button[type="button"] {
+  background-color: #f44336;
+  color: white;
+}
+
+.submitcancel button:hover {
+  opacity: 0.8;
+}
+
+
+
+.sidebar {
+  width: 200px;
+  color: #000;
+}
+
+.menu-item {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-header .icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.menu-header .title {
+  flex-grow: 1;
+}
+
+.menu-header .arrow {
+  transition: transform 0.3s ease;
+}
+
+.menu-header.active .arrow {
+  transform: rotate(180deg);
+}
+
+.arrow {
+  margin-right: 5px;
+  color: #333;
+}
+
+.submenu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+
+.submenu {
+  color: #000;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 150px;
+}
+
+.submenu .menu-item :hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.submenu .menu-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submenu .menu-item.active {
+  background-color: #e3a79c;
+  color: black;
+  border-radius: 5px;
+}
+
+
+.books-table {
+  width: 100%;
+  margin: 12px 30px 15px;
+  border-collapse: collapse;
+}
+
+.books-table th {
+  border: 2px solid #ddd;
+  padding: 5px 10px;
+}
+
+.books-table td {
+  padding: 5px 10px;
+  height: 30px;
+  border: 1px solid #ddd;
+  text-align: left;
+
+}
+
+
+.table-container {
+  display: inline-block;
+  width: 50%;
+}
+
+.no-books-message {
+  position: fixed;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.manageBooks-sidebar {
+  margin-top: 100px;
+  width: 220px;
+  height: 620px;
+  padding: 10px;
+  background-color: #a37b7b;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}

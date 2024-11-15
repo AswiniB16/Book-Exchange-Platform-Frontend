@@ -1,0 +1,96 @@
+.search-layout {
+  display: flex;
+  flex-direction: row;
+  /* Arrange children horizontally */
+  width: 100%;
+  height: 100vh;
+  /* Optional: make it take full viewport height */
+}
+
+.sidebar-filter {
+  margin-top: 100px;
+  width: 220px;
+  height :1050px;
+  /* Set a fixed width for the sidebar */
+  padding: 10px;
+  background-color: #a37b7b;
+  /* Optional: set background color */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  
+
+}
+
+.grid {
+  flex-grow: 1;
+  /* Make the product grid take the remaining width */
+  padding: 15px;
+  margin-top: 68px;
+  margin-left: 2px;
+  background-color: #fff;
+}
+
+
+.product-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 19px 20px 20px 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 50%;
+}
+
+.centered-message {
+  position: fixed;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.product-popup {
+  position: relative;
+  width: 430px;
+  height: 30px;
+  min-height: 50vh;
+  box-sizing: border-box;
+  color: black;
+  border: 1px solid #fff;
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  display: flex;
+  border-radius: 10px;
+ 
+}
+.book-box{
+  margin: 15px;
+  border: 1px solid #be0c0c;
+  width: 100%;
+  
+}
+
+.book-content{
+  padding: 40px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column; 
+  justify-items: center;
+  gap: 5px
+
+}
+.book-content h4 {
+  display: inline-block;
+  margin-right: 10px;
+ 
+}

@@ -1,0 +1,176 @@
+.login {
+    position: relative;
+    width: 430px;
+    height: 30px;
+    min-height: 50vh;
+    box-sizing: border-box;
+    color: #fff;
+    border: 1px solid #fff;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(30px);
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+   
+}
+
+.login.active {
+    height: 480px;
+}
+
+.login .form-login {
+    width: 100%;
+    padding: 40px;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+}
+
+.login.active .form-login {
+    transition: transform 0.3s ease;
+    transform: translateX(-400px);
+}
+
+.login.active2 .form-login {
+    transition: transform 0.2s ease;
+    transform: translateX(-400px); 
+}
+
+.login .form-register {
+    position: absolute;
+    transform: translateX(400px);
+    width: 100%;
+    padding: 40px;
+    transition: transform 0.3s ease;
+}
+
+.login.active .form-register {
+    transform: translateX(0);
+}
+
+.login .form-resetValidation {
+    position: absolute;
+    transform: translateX(-400px); 
+    width: 100%;
+    padding: 40px;
+    transition: transform 0.3s ease;
+}
+
+.login .form-resetPassword {
+    position: absolute;
+    transform: translateX(400px); 
+    width: 100%;
+    padding: 40px;
+    transition: transform 0.3s ease;
+}
+
+
+.form-resetValidation.active1 {
+    transform: translateX(0);
+}
+
+.form-resetPassword.activeReset {
+    transform: translateX(0);
+}
+
+form h1 {
+    font: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+form .logindata {
+    position: relative;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.logindata input {
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    padding: 20px 10px;
+    
+}
+.logindata .security-question{
+    padding: 5px;
+}
+.logindata input::placeholder {
+    font-size: 20px;
+    color: #8d8989;
+    padding: 20px 10px
+}
+
+.logindata input:focus::placeholder {
+    color: transparent;
+  }
+
+.form-login .rememberme {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.rememberme label input {
+    accent-color: #fff;
+    margin: 4px;
+}
+
+.rememberme a {
+    color: #fff;
+}
+
+.rememberme a:hover {
+    text-decoration: underline;
+}
+
+form button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.login .signup {
+    text-align: center;
+    margin: 10px;
+}
+
+.signup a {
+    font-size: 20px;
+    color: #fff;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+.reset-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.1);
+    width: 420px;
+    height: 420px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    flex-direction: column;
+  }
+.reset-header{
+    display: flex;
+    justify-content: center;
+    color: aqua;
+}
+.reset-text{
+    margin: 15px;
+}
