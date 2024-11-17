@@ -1,10 +1,13 @@
 # Book-exchange-platform
 
 Steps to import and run the application
+
+---
+
 1. Open VS Code and Navigate to code directory
-2. Install Dependencies using below Command:
+2. Install Dependencies using below command:
    ````
-   npm start
+   npm install
 
    ````
    
@@ -12,6 +15,6 @@ Steps to import and run the application
    ````
    npm start
    ````
-This will start the React APP in http://localhost:3000 .
+This will start the React APP in http://localhost:3000.
 
  
